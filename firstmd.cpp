@@ -22,7 +22,7 @@ int main() {
     int a = txt.size();  
     cin >> counter;
     cin.clear();
-    cin.ignore( 10000 , '\n' );
+    cin.ignore(10000,'\n');
 
     switch(counter){
 
@@ -78,6 +78,6 @@ int main() {
       }
     }
   }
-  
+
   return 0;
 }
