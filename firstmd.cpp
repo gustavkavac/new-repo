@@ -48,7 +48,6 @@ int main() {
         while (k < a) {
           num_n = num_n + k + 1;
           k++;
-          cout << num_n << " " <<endl;
         }
         cout << "Skaitlis n ir " << num_n << endl;
         break;
