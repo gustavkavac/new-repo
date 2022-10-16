@@ -45,11 +45,11 @@ int main() {
       case 3: {
         int long num_n = 1;
         int k = 1;
-          while (k < a) {
-            num_n = num_n + k + 1;
-            k++;
-            cout << num_n << " " <<endl;
-          }
+        while (k < a) {
+          num_n = num_n + k + 1;
+          k++;
+          cout << num_n << " " <<endl;
+        }
         cout << "Skaitlis n ir " << num_n << endl;
         break;
       }
