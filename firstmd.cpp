@@ -42,14 +42,22 @@ int main() {
         break;
       }
 
-      case 3:
-        cout << "Teksta garums ir " << a << " rakstzimes." << endl;
+      case 3: {
+        int long num_n = 1;
+        int k = 1;
+          while (k < a) {
+            num_n = num_n + k + 1;
+            k++;
+            cout << num_n << " " <<endl;
+          }
+        cout << "Skaitlis n ir " << num_n << endl;
         break;
+      }
 
       case 4: {         
         long long fcto = 1;
-        for(long i = 1; i <= a; ++i) {
-            fcto *= i;
+        for (long i = 1; i <= a; ++i) {
+          fcto *= i;
         }
         cout << "Faktorials no teksta garuma: " << fcto << endl;
         break;
@@ -58,10 +66,10 @@ int main() {
       case 5:{         
         int b = a-1;
         cout << "Teksts reversaa:" << endl;
-          while (0 <= b) {
-            cout << txt[b];
-            b--;
-          }
+        while (0 <= b) {
+          cout << txt[b];
+          b--;
+        }
         cout << endl;    
         break;
       }
