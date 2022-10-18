@@ -1,11 +1,12 @@
 #include <iostream>
+#include <array>
 
 using namespace std;
 
 int main() {
-    int num[10] = {7,1,90,3,4,5,9,9,10,11};
-    int sum = 0;
-    int avrge = 0;
+    array<long long int, 10> num = {7, 1, -9208, 549000, 9097, 5, 29145279, 9, 10, 11};
+    long long int sum = 0;
+    long long int avrge = 0;
 
     for (int i = 1; i <= 10; i++) {
         if (i == 10) {
