@@ -8,7 +8,7 @@ int main() {
     long long int sum = 0;
     long long int avrge = 0;
 
-    for (int i = 1; i <= 10; i++) {
+    for (int i = 0; i <= 10; i++) {
         if (i == 10) {
             cout << sum/i << endl;
         } else {
