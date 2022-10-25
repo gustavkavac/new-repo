@@ -27,8 +27,8 @@ int main(){
     
     info();
 
-    while (!stp){
-        switch(inputCall(switcher())){
+    while (!stp){   //loops ar ieksheju zaroshanos, kura tiek lietots enums
+        switch(inputCall(switcher())){  //visos keisos ir principā tikai funkcijas
             case change_numbers:{
                 VectInpt(num);
                 break;
@@ -68,7 +68,7 @@ int main(){
     return 0;
 }
 
-void info(){
+void info(){    // informatīvā izdruka
     cout << "Izvelne:" << endl;
     vector<string> info = {"Ievadīt skaitļus", "Rinda", "Steks", "Divi steki", "Izvada skaitļu virkni", "Beigt darbību"};
     for (int i = 0; i < 6; i++) {
@@ -76,7 +76,7 @@ void info(){
     }
 }
 
-void Print(int arg){
+void Print(int arg){    //visu objektu izdruka pēc kārtas
     cout << arg << "\n";
 }
 
@@ -108,7 +108,7 @@ void Print(list<int>& arg){
     cout << '\n';
 }    
 
-void VectInpt(vector<int>& num){
+void VectInpt(vector<int>& num){    // objektu pamainīšanas funkcijas
     bool stp = false;
     int i = 0;
     cout << "Vecie skaitļi: ";
@@ -147,7 +147,7 @@ void StackToStack(stack<int>& stack_in, stack<int>& stack_out){
     }
 }
 
-int switcher(){
+int switcher(){     // maza funkcija lai iedotu zaroshanās pieeju lietotājam
     int x = 7;
     cout << "Izvelēties darbību (ierakstiet skaitli no 1 lidz 6) : ";
     cin >> x;
