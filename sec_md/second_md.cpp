@@ -27,7 +27,6 @@ int main(){
     
     info();
 
-
     while (!stp){
         switch(inputCall(switcher())){
             case change_numbers:{
