@@ -13,11 +13,9 @@ int main(){
     pointNum = &input; 
 
     for(i = 0; i < 10; i++){
-        if(*pointNum == num_mass[i]) {
+        if(*pointNum == num_mass[i]){
             itis = true;
             break;
-        }else {
-            itis = false;
         }
     }
     
