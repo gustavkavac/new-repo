@@ -2,17 +2,25 @@
 #include <string>
 using namespace std;
 
+int sizer(string input);
+
 int main(){
-    string input;
-    string *point_num;
+    string txt;
 
-    point_num = &input;
-    cin >> input;
+    cout << "Ievadie simboolu rindu: ";
+    cin >> txt;
+    cin.clear();
+    cin.ignore(1000,'\n');
 
-    cout << *point_num;
-
-
-
+    sizer(txt);
 
     return 0;
+}
+
+int sizer(string input){
+    string *point_num;
+    point_num = &input;
+    int the_size = 0;
+    cout << "Simbolu rindas garums ir : " << static_cast<string>(*point_num).size() << endl;
+    return the_size;
 }
