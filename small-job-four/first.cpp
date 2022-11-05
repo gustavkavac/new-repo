@@ -1,26 +1,35 @@
 #include <iostream>
 using namespace std;
 
+void sum(int x, int y);
+
 int main(){
-    int num_mass[10] = {4, 2, 8, 3, 5, 6, 7, 9, 11, 15};
-    int *pointNum;
-    int input;
-    bool itis = false;
-    int i = 0;
+    int a = 0;
+    int b = 0;
+    int *num_1;
+    int *num_2;
 
-    cin >> input;
-    pointNum = &input; 
+    cout << "ievadiet skaititajus:" << endl;
+    cin >> a;
+    *num_1 = a;
 
-    for(i = 0; i < 10; i++){
-        if(*pointNum == num_mass[i]) {
-            itis = true;
-            break;
-        }else {
-            itis = false;
-        }
-    }
-    
-    if(itis){
-        cout << "YES" << endl;
-    }
+    cin >> b;
+    *num_2 = b;
+    cin.clear();
+    cin.ignore(1000, '\n');
+
+    sum(*num_1, *num_2);
+
+    int ab = *num_1 + *num_2;
+
+    // cout << ab;
+
+    return 0;
+}
+
+void sum(int x, int y){
+    int sum = 0;
+    sum = x + y;
+
+    cout << "skaitlju summa ir : " << sum << endl;
 }
