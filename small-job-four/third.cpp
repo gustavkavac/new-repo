@@ -6,12 +6,9 @@ int sizer(string input);
 
 int main(){
     string txt;
-
+    
     cout << "Ievadie simboolu rindu: ";
-    cin >> txt;
-    cin.clear();
-    cin.ignore(1000,'\n');
-
+    getline(cin,txt);
     sizer(txt);
 
     return 0;
