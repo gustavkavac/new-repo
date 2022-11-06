@@ -20,8 +20,7 @@ int main(){
 
     sum(*num_1, *num_2);
 
-    int ab = *num_1 + *num_2;
-
+    // int ab = *num_1 + *num_2;
     // cout << ab;
 
     return 0;
