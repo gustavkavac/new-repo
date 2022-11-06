@@ -1,20 +1,16 @@
 #include <iostream> 
-#include <array>
 using namespace std;
 
-void print_reverse(array<int, 10> input);
-
-int main(){
-    array<int, 10> nmbr{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-
-    print_reverse(nmbr);
-
+void print_reverse(int narr[10], int size){
+    for(int *i = &narr[10]; *i < size; i++){
+        cout << *i << ' ';
+    }
 }
 
-void print_reverse(array<int, 10> input){
-    int *pointNum;
-    for(int i = 9; i > -1; --i){
-    pointNum = &input[i];
-    cout << *pointNum << ' ';
-    }
+int main(){
+    int num_arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int b = sizeof(num_arr)/sizeof(int);
+    cout << b;
+    print_reverse(num_arr, b);
+    cout << endl;
 }
