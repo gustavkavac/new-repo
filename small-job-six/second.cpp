@@ -15,7 +15,8 @@ int main() {
             ofstream unEven("file1.txt", ios::app);
             unEven << numArr[i] << endl;
             unEven.close();
-        } else if (isPrime(numArr[i])) {
+        }
+        if (isPrime(numArr[i])) {
             ofstream prime("file3.txt", ios::app);
             prime << numArr[i] << endl;
             prime.close();           
