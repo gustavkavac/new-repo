@@ -26,7 +26,6 @@ void save(int &letter) {
             if (obj.eof()) {
                 break;
             }   
-            cout << chr << " ";
             if (isalpha(chr)) {
                 letter++;
             }
