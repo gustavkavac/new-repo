@@ -7,11 +7,11 @@ bool isPrime(int x);
 int main() {
     int numArr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     for (int i = 0; i < (sizeof(numArr) / sizeof(numArr[0])); i++) {
-        if ((numArr[i] % 2 == 1) && (isPrime(numArr[i]) == 0)) {
+        if (numArr[i] % 2 == 1) {
             ofstream even("file2.txt", ios::app);
             even << numArr[i] << endl;
             even.close();
-        } else if ((numArr[i] % 2 == 0) && (isPrime(numArr[i]) == 0)) {
+        } else if (numArr[i] % 2 == 0) {
             ofstream unEven("file1.txt", ios::app);
             unEven << numArr[i] << endl;
             unEven.close();
